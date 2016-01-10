@@ -32,8 +32,9 @@ Esse pod tem como objetivo habilitar rápidos testes de icones através de compa
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'BadassIconp' => ['Pod/Assets/*.png']
+    'BadassIconp' => ['Pod/Assets/*.png', 'Project/**/*.{bundle,xib,nib}']
   }
+  s.resources = "Project/**/*.{png,bundle,xib,nib}"
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
